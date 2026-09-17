@@ -139,7 +139,7 @@
     <h1>Privacy Policy — AI Chat Exporter</h1>
     <div class="meta">
       Applies to Chrome extension <strong>"AI Chat Exporter: Save Claude, ChatGPT &amp; Gemini"</strong><br>
-      Last updated: September 17, 2026 &bull; Version covered: 1.0.0 &bull; Developer: MAH HASAN
+      Last updated: September 18, 2026 &bull; Version covered: 1.0.0 &bull; Developer: MAH HASAN
     </div>
 
     <h2>1. Summary (Plain Language)</h2>
@@ -158,6 +158,9 @@
       <li><strong>Exported &amp; Pinned Chats:</strong> Conversations and responses you explicitly choose to export or save are stored exclusively using the <code>chrome.storage.local</code> API on your local computer.</li>
       <li><strong>Extension Preferences:</strong> Your preferred default export format, progress theme, and hotkey settings are kept in local storage.</li>
       <li><strong>Active Organization Cookie (lastActiveOrg):</strong> On <code>claude.ai</code>, the extension reads the non-sensitive <code>lastActiveOrg</code> cookie solely to allow the usage meter to display limits for the correct organization workspace. This value is an internal organization identifier, never your password or auth token, and is never sent to us or any remote server.</li>
+      <li><strong>Notifications:</strong> The <code>notifications</code> permission is used only to show a local browser alert when an export finishes (or fails). No data is collected or sent anywhere to generate these alerts.</li>
+      <li><strong>Context Menu:</strong> The <code>contextMenus</code> permission adds a right-click "Quick Export" option on supported AI chat pages. It does not read, store, or transmit any page content beyond triggering the same local export flow.</li>
+      <li><strong>Alarms:</strong> The <code>alarms</code> permission is used only to reset the local daily free-quota counter at midnight and to periodically refresh the local usage meter display. It does not schedule any network calls to our servers.</li>
     </ul>
 
     <h3>2.2 Direct communications with AI platforms</h3>
